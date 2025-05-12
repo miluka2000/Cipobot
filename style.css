@@ -4,8 +4,10 @@ body {
     padding: 0;
     background-size: cover;   
     background-position: center;
-    background-attachment: fixed;
     color: white; 
+    background: linear-gradient(to bottom, #3a47d5, #090979);
+    font-family: 'Poppins', sans-serif;
+    background-attachment: fixed;
   }
 
   header {
@@ -30,6 +32,8 @@ body {
 
   nav a:hover {
     background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    transition: 0.3s;
   }
 
   main {
@@ -46,3 +50,16 @@ body {
       margin: 0 10px;
     }
   }
+  .main{
+    border: 2px solid black;
+    margin-left: 200px;
+    margin-right: 200px;
+    height: 100vh;
+    background-color:#4149C0;
+    height: 100%;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
