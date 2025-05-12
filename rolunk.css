@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #111;
+    color: #f4f4f4;
+    padding: 40px 20px;
+  }
+
+  .section1 {
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+    padding: 30px;
+    background: #1b1b1b;
+    border-left: 5px solid #ffffff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    animation: fadeInUp 1s ease both;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+
+  .section2 {
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+    padding: 30px;
+    background: #1b1b1b;
+    border-right: 5px solid #ffffff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    animation: fadeInUp 1s ease both;
+    border-radius: 10px;
+  }
+
+  .section3 {
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+    padding: 30px;
+    background: #1b1b1b;
+    border-left: 5px solid #ffffff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    animation: fadeInUp 1s ease both;
+    border-radius: 10px;
+  }
+
+  .section4 {
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+    padding: 30px;
+    background: #1b1b1b;
+    border-right: 5px solid #ffffff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    animation: fadeInUp 1s ease both;
+    border-radius: 10px;
+  }
+
+  .section5 {
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+    padding: 30px;
+    background: #1b1b1b;
+    border-left: 5px solid #ffffff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    animation: fadeInUp 1s ease both;
+    border-radius: 10px;
+  }
+
+  .section:nth-child(even) {
+    border-left-color: #47d1ff;
+  }
+
+  .section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ff4747;
+  }
+
+  .section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .section {
+      padding: 20px;
+    }
+
+    .section h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .section1, .section3, .section5:nth-child(odd) {
+    margin-left: 30px;
+  }
+  
+  .section2, .section4:nth-child(even) {
+    margin-right: 30px;
+  }
+
+
+  
