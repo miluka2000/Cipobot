@@ -38,7 +38,11 @@ body {
     border-radius: 15px;
     transition: 0.3s;
   }
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
   main {
     padding: 1rem;
     background-color: rgba(0, 0, 0, 0.4);
@@ -348,4 +352,203 @@ header{
 }
 .slide-in-right {
   animation: slideInRight 1s forwards;
+} 
+.shoe-card {
+  width: 100%;
+  max-width: 100%; 
+  background-color: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin: 20px;
 }
+
+.shoe-card:hover {
+  transform: translateY(-5px);
+}
+
+.shoe-image-wrapper {
+  position: relative;
+}
+
+.shoe-image {
+  width: 100%;
+  height: 16rem;
+  object-fit: cover;
+}
+
+.discount-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #ef4444; 
+  color: white;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: 9999px;
+}
+
+.shoe-info {
+  padding: 1.25rem;
+}
+
+
+
+.shoe-title {
+  font-weight: bold;
+  font-size: 1.125rem;
+  color: #1e3a8a; 
+  margin: 0;
+}
+
+.shoe-subtitle {
+  font-size: 0.875rem;
+  color: #2563eb; 
+  margin: 0.25rem 0 0;
+}
+
+.price-info {
+  text-align: right;
+}
+
+.cipo-price {
+  text-decoration: line-through;
+  font-size: 0.875rem;
+  color: #9ca3af; 
+}
+
+.learazas-price {
+  font-weight: bold;
+  color: #2563eb; 
+}
+
+.shoe-footer {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stars {
+  color: #fbbf24; 
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+}
+
+.hozzaadas-button {
+  background-color: #3b82f6; 
+  color: white;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #2563eb; 
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+.product-grid{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+@media (min-width: 640px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.seemore{
+  border: 1px solid black;
+  background-color: #5a4bff;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-left: 875px;
+}
+.kap {
+      font-size: 2rem;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+      text-align: center;
+      font-weight: bold;
+      margin-top: 30px;
+    }
+
+    .p1 {
+      color: #ffffff;
+      margin-bottom: 2rem;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .social-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 10px;
+      max-width: 800px;
+      width: 100%;
+      justify-items: center;
+      margin-left: 23%;
+    }
+
+    .social-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+    }
+
+    .social-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .social-item img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      border-radius: 10px;
+      margin-bottom: 8px;
+    }
+
+    .social-name {
+      font-size: 0.9rem;
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    .footer1 {
+      margin-top: 3rem;
+      color: #ffffff;
+      font-size: 0.875rem;
+      text-align: center;
+      font-weight: bold;
+    }
+.main1{
+  border: 2px solid black;
+  margin-left: 200px;
+  margin-right: 200px;
+  height: 100vh;
+  height: 100%;
+  background-color: #1d2233;
+}    
