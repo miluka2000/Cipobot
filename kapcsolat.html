@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapcsolat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="main1">
+
+
+<header>
+      <span class="span1">KICK<span class="span2">STORE</span></span>
+    </header>
+      
+    
+          <nav>
+           <a href="fooldal.html">Főoldal</a>
+          <a href="rolunk.html">Rólunk</a>
+           <a href="kapcsolat.html">Kapcsolat</a>
+          </nav>
+    
+ 
+
+
+          <h1 class="kap">Kapcsolat</h1>
+  <p class="p1">Kövess minket közösségi médián, vagy írj nekünk!</p>
+
+   <div class="social-grid">
+    <a href="https://twitter.com" class="social-item" target="_blank">
+      <img src="img/twitter.png" alt="Twitter">
+      <span class="social-name">Twitter</span>
+    </a>
+    <a href="https://facebook.com" class="social-item" target="_blank">
+      <img src="img/Facebook-Logo-2013.png" alt="Facebook">
+      <span class="social-name">Facebook</span>
+    </a>
+    <a href="https://instagram.com" class="social-item" target="_blank">
+      <img src="img/Instagram_logo_2016.svg.webp" alt="Instagram">
+      <span class="social-name">Instagram</span>
+    </a>
+    <a href="https://youtube.com" class="social-item" target="_blank">
+      <img src="img/Youtube_logo.png" alt="YouTube">
+      <span class="social-name">YouTube</span>
+    </a>
+    <a href="https://github.com" class="social-item" target="_blank">
+      <img src="img/GitHub-logo.png" alt="GitHub">
+      <span class="social-name">GitHub</span>
+    </a>
+    <a href="https://tiktok.com" class="social-item" target="_blank">
+      <img src="img/tiktok.png" alt="TikTok">
+      <span class="social-name">TikTok</span>
+    </a>
+
+  </div>
+
+
+
+
+
+<div class="form-container">
+  <h2>Töltsd ki a kérdőívet és találd meg a stílusod!</h2>
+
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Alapinformációk</legend>
+
+      <label for="nev">Neved:</label>
+      <input type="text" id="nev" name="nev" required>
+
+      <label for="nem">Nem:</label>
+      <select id="nem" name="nem">
+        <option value="ferfi">Férfi</option>
+        <option value="no">Nő</option>
+        <option value="egyeb">Egyéb</option>
+        <option value="nem-megadott">Nem szeretném megadni</option>
+      </select>
+
+      <label for="meret">Mekkora cipőt hordasz? (EU méret)</label>
+      <input type="number" id="meret" name="meret" min="30" max="50">
+    </fieldset>
+
+    <fieldset>
+      <legend>Stíluspreferenciák</legend>
+
+      <label for="stilus">Melyik stílus áll hozzád a legközelebb?</label>
+      <select id="stilus" name="stilus">
+        <option value="sportos">Sportos</option>
+        <option value="elegans">Elegáns</option>
+        <option value="utcai">Utcai</option>
+        <option value="vintage">Vintage</option>
+        <option value="minimalista">Minimalista</option>
+        <option value="tura">Túrázós</option>
+      </select>
+
+      <p>Milyen színeket szeretsz viselni?</p>
+      <label><input type="checkbox" name="szinek" value="fekete"> Fekete</label>
+      <label><input type="checkbox" name="szinek" value="feher"> Fehér</label>
+      <label><input type="checkbox" name="szinek" value="elink"> Élénk színek</label>
+      <label><input type="checkbox" name="szinek" value="foldszinek"> Földszínek</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Használat és szokások</legend>
+
+      <label for="alkalom">Milyen alkalomra keresel cipőt leggyakrabban?</label>
+      <select id="alkalom" name="alkalom">
+        <option value="munka">Munka</option>
+        <option value="sport">Sport</option>
+        <option value="hetkoznap">Hétköznap</option>
+        <option value="esemenyek">Események</option>
+        <option value="kirandulas">Kirándulás</option>
+      </select>
+
+      <label for="gyakorisag">Milyen gyakran vásárolsz cipőt?</label>
+      <select id="gyakorisag" name="gyakorisag">
+        <option value="havonta">Havonta</option>
+        <option value="negyedev">Negyedévente</option>
+        <option value="evente">Évente</option>
+        <option value="ha_muszaj">Ha muszáj</option>
+      </select>
+
+      <p>Melyik cipőtípusokat részesíted előnyben?</p>
+      <label><input type="checkbox" name="tipus" value="sneaker"> Sneaker</label>
+      <label><input type="checkbox" name="tipus" value="bakancs"> Bakancs</label>
+      <label><input type="checkbox" name="tipus" value="szandal"> Szandál</label>
+      <label><input type="checkbox" name="tipus" value="magassarku"> Magassarkú</label>
+      <label><input type="checkbox" name="tipus" value="mokaszin"> Mokaszin</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Kényelem és egészség</legend>
+
+      <label for="fontos">Mi a legfontosabb egy cipőnél?</label>
+      <select id="fontos" name="fontos">
+        <option value="kenyelem">Kényelem</option>
+        <option value="kulso">Kinézet</option>
+        <option value="ar">Ár</option>
+        <option value="tartos">Tartósság</option>
+        <option value="marka">Márka</option>
+      </select>
+
+      <label for="problemak">Van valamilyen lábproblémád, amire figyelni kell?</label>
+      <textarea id="problemak" name="problemak" rows="3" placeholder="Pl. lúdtalp, széles láb stb. (opcionális)"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>Kapcsolat és eredmény</legend>
+
+      <label for="stilusnev">Adj egy nevet a stílusodnak! (játékos)</label>
+      <input type="text" id="stilusnev" name="stilusnev" placeholder="Pl. Laza Urban, Elegáns Felfedező...">
+
+      <label for="email">Szeretnél személyre szabott ajánlásokat kapni?</label>
+      <input type="email" id="email" name="email" placeholder="Email címed (opcionális)">
+
+      <label>
+        <input type="checkbox" name="adatvedelem" required>
+        Hozzájárulok az adataim kezeléséhez.
+      </label>
+    </fieldset>
+
+    <button type="submit">Küldés</button>
+  </form>
+</div>
+
+</body>
+</html>
+
+  
+  <footer class="footer1">
+
+
+
+    © 2025 KICKSTORE – Minden jog fenntartva.
+  </footer>
+
+    
+    
+    </div>
+
+
+
+</body>
+</html>
