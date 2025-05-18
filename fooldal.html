@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reszponzív Weboldal Háttérrel</title>
+</head>
+<body>
+
+<div class="main">
+
+
+    <header>
+      <span class="span1">KICK<span class="span2">STORE</span></span>
+    </header>
+
+      <nav>
+       <a href="fooldal.html">Főoldal</a>
+      <a href="rolunk.html">Rólunk</a>
+       <a href="kapcsolat.html">Kapcsolat</a>
+      </nav>
+
+      <section class="hero">
+        <div class="hero-content">
+          <div class="text">
+            <h1>Lépj a stílusba!</h1>
+            <p>
+              Keress cipőket az Adidas, Nike, és még sok más kollabokból!
+              Ha valami különlegesre vágsz nálunk megtalálod!
+            </p>
+            <div class="buttons">
+              <a href="#" class="btn primary">Vásárolj Most</a>
+              <a href="akcioshoe.html" class="btn secondary">Akciós surranók</a>
+            </div>
+          </div>
+              <div class="image">
+                <div id="hero-title" class="hero-title">Jordan 1 Travis</div>
+                <img id="hero-image" src="img/75fe4e03-d3d2-45b8-990e-4b488a0af878.jpg" alt="Sneaker" />
+              </div>
+      </section>
+ 
+      <section class="brands">
+        <h2>Támogató Márkák</h2>
+        <div class="brand-logos">
+          <div class="brand"><img src="img/Nike decide deixar de vender seus produtos na….jpg" alt="Nike" title="Nike"/></div>
+          <div class="brand"><img src="img/d302d3a8-5271-4d7b-93af-c96d4e052ddb.jpg" alt="Adidas" title="Adidas"/></div>
+          <div class="brand"><img src="img/Air Jordan logo.jpg" alt="Jordan" title="Jordan"/></div>
+          <div class="brand"><img src="img/LUNGHISPORT VIA ANNIBALE VECCHI ,52_E 06123….jpg" alt="New Balance" title="New Balance"/></div>
+          <div class="brand"><img src="img/Puma-Logo weißes Symbol mit Namen Kleidung….jpg" alt="Puma" title="Puma"/></div>
+          <div class="brand"><img src="img/Vans Simple Bold Cycling 31035 Vinyl Decal Sticker.jpg" alt="Vans" title="Vans"/></div>
+        </div>
+      </section>
+
+
+
+      <section class="newsletter-section">
+          <div class="newsletter-container">
+              <h3 class="newsletter-title">Maradj Naprakész</h3>
+              <p class="newsletter-text">Iratkozz fel hírlevelünkre a legjobb akcióinkért és ajánlatainkért!</p>
+              <div class="newsletter-form">
+                  <input type="email" placeholder="Az Email Címed" class="newsletter-input">
+                  <button class="newsletter-button">Feliratkozás</button>
+              </div>
+          </div>
+      </section>
+
+
+
+<script>
+  const images = [
+    {
+      src: "img/75fe4e03-d3d2-45b8-990e-4b488a0af878.jpg",
+      title: "Jordan 1 Travis"
+    },
+    {
+      src: "img/air-jordan-4-military-black-dh6927-111-release-date.jpg",
+      title: "Jordan 4 Military Black"
+    },
+    {
+      src: "img/AIR+FORCE+1+'07.avif",
+      title: "Nike Air Force 1 '07"
+    },
+    {
+      src: "img/s-l1200.jpg",
+      title: "Ebay Dunk"
+    },
+    {
+      src: "img/AIR+MAX+PLUS+III.avif",
+      title: "Air Max Plus 3"
+    },
+
+  ];
+
+  let currentIndex = 0;
+  const heroImage = document.getElementById("hero-image");
+  const heroTitle = document.getElementById("hero-title");
+
+  setInterval(() => {
+    
+    heroImage.classList.remove("slide-in-right");
+    heroTitle.classList.remove("slide-in-right");
+    heroImage.classList.add("slide-out-left");
+    heroTitle.classList.add("slide-out-left");
+
+    setTimeout(() => {
+     
+      currentIndex = (currentIndex + 1) % images.length;
+      heroImage.src = images[currentIndex].src;
+      heroTitle.textContent = images[currentIndex].title;
+
+      
+      heroImage.classList.remove("slide-out-left");
+      heroTitle.classList.remove("slide-out-left");
+      heroImage.classList.add("slide-in-right");
+      heroTitle.classList.add("slide-in-right");
+
+    }, 1000);
+  }, 4000);
+</script>
+
+
+      
+
+</div>
+</body>
+</html>
+ 
