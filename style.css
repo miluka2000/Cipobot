@@ -614,7 +614,7 @@ button {
   padding: 12px;
   font-size: 16px;
   background-color: #4f46e5;
-  color: white;
+  color: rgb(0, 0, 0);
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -624,4 +624,26 @@ button {
 button:hover {
   background-color: #4f46e5;
 }
+table {
+  width: 80%;
+  margin: 2rem auto;
+  border-collapse: collapse;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9fb;
+  border-radius: 12px;
+  overflow: hidden;
+}
 
+th, td {
+  padding: 12px 20px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  color: black;
+} 
+thead {
+  background-color: #4f46e5;
+  color: white;
+}
+tbody tr:hover {
+  background-color: #e0e7ff;
+}
